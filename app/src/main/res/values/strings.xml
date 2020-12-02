@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyNiceStart</string>
+    <string name="txt_entrar">ENTRAR</string>
+    <string name="txt_volver">VOLVER</string>
+    <string name="txt_registrar">REGISTRARSE</string>
+    <string name="txt_crear">CREAR</string>
+</resources>
