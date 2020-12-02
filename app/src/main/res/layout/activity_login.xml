@@ -47,7 +47,9 @@
         android:hint="Usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2">
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        style=""
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -114,6 +116,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/my_button"
         android:text="@string/txt_entrar"
+        style="@style/ButtonStraight"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/passwordTIL" />

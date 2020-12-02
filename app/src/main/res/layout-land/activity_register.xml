@@ -4,38 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/imageViewFondo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/fondo"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/scrim"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="191dp"
-        android:layout_height="260dp"
+        android:id="@+id/imageView"
+        android:layout_width="331dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="59dp"
         android:paddingLeft="20dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo_empresa" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usernameTIL"
-        android:layout_width="330dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
-        android:alpha="0.8"
+        android:alpha="0.5"
         android:background="@android:color/white"
         android:hint="Usuario"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="155dp"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1"
-        >
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="155dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -47,16 +55,17 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTIL"
-        android:layout_width="330dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
-        android:alpha="0.8"
+        android:alpha="0.5"
         android:background="@android:color/white"
         android:hint="Contrasena"
         app:endIconMode="password_toggle"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="229dp"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2">
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH2"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="229dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -64,17 +73,19 @@
             android:background="@android:color/white"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTIL"
-        android:layout_width="330dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
-        android:alpha="0.8"
+        android:alpha="0.5"
         android:background="@android:color/white"
         android:hint="Email"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="229dp"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3">
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH3"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="229dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -110,18 +121,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.45" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineH1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.20" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineH2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.40" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineH3"
         android:layout_width="wrap_content"
