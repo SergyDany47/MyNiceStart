@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         ImageView fondo = findViewById(R.id.img_guiri);
-
         Glide.with(this)
                 .load(R.drawable.img_guiri)
                 .centerCrop()

@@ -10,8 +10,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+/**
+ * @author SergioO
+ * En esta clase SplashActivity configuramos y damos funcionalidad al splash de nuestra aplicacion
+ */
 
 public class splashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,6 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * @author SergioO
+ * En esta clase LoginActivity damos funcionalidad al boton entrar de la interfaz de log in que nos redirigirá al main.
+ * Tambien damos funcionalidad al texto "Registrate" para que al pulsar sobre él nos lleve a la interfaz de registro
+ */
+
 public class LoginActivity extends AppCompatActivity {
     private TextView txtRegistrate;
     @Override

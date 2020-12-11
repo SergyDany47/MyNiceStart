@@ -4,8 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import androidx.annotation.Nullable;
+
+/**
+ * @author SergioO
+ * En esta clase RegisterActivity configuramos la funcionalidad del boton volver de la interfaz de registro
+ */
 
 public class RegisterActivity extends Activity {
     @Override
